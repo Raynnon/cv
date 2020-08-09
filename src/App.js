@@ -1,10 +1,12 @@
 import React from 'react';
-import './App.css';
+import './custom.scss';
+import './app.scss';
+import Header from './components/Header';
 
 function App() {
   return (
-    <div className="App">
-      
+    <div className="App container-fluid p-0">
+      <Header />
     </div>
   );
 }

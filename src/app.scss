@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@font-face {
+    font-family: 'Intro';
+    src:url('./styles/Intro.ttf.woff') format('woff'),
+        url('./styles/Intro.ttf.svg#Intro') format('svg'),
+        url('./styles/Intro.ttf.eot'),
+        url('./styles/Intro.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope-ExtraBold';
+    src:url('./styles/Manrope-ExtraBold.ttf.woff') format('woff'),
+        url('./styles/Manrope-ExtraBold.ttf.svg#Manrope-ExtraBold') format('svg'),
+        url('./styles/Manrope-ExtraBold.ttf.eot'),
+        url('./styles/Manrope-ExtraBold.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #F2F4F9;
+    margin-top: 150px;
+}
+
+h1 {
+    font-family: 'Intro';
+}
+
+h2 {
+    font-family: 'Manrope-ExtraBold';
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-danger, .btn-outline-warning {
+    border-radius: 40px;
+}
