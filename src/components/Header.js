@@ -1,28 +1,36 @@
 import React, { Component } from 'react'
 import imageFlorian from '../images/florian-assante.png'
+import linkedIn from '../images/linkedin-logo.png'
+import github from '../images/github-logo.png'
 import '../styles/header.css'
 
 export default class Header extends Component {
     render() {
         return (
-            <header className='row ml-5'>
+            <header className="row">
                 <div class="col-5 mt-4">
-                    <h2 className='text-primary'><span className='text-danger'>HELLO</span>, I'M FLORIAN ASSANTE.</h2>
-                    <h1 className='text-primary font-weight-bold'>Web Developer</h1>
-                    <p className='text-secondary font-weight-bold'>Front-end, Webmarketing & love to play Video Games.</p>
-                    <div className='row justify-content-start'>
-                        <button type='button' className='btn btn-danger btn-rounded col-3 pr-1'>Hire me</button>
-                        <button type='button' className='offset-md-1 btn btn-outline-warning col-3'>Get CV</button>
+                    <h2 className="text-primary"><span className="text-danger">HELLO</span>, I'M FLORIAN ASSANTE.</h2>
+                    <h1 className="text-primary font-weight-bold">Web Developer</h1>
+                    <p className="text-secondary font-weight-bold">Front-end, Webmarketing & love to play Video Games.</p>
+                    <div className="double-button row justify-content-start">
+                        <button type="button" className="btn btn-large btn-danger btn-rounded col-3 font-weight-bold shadow">Hire me</button>
+                        <button type="button" className="offset-md-1 btn btn-outline-warning col-3 font-weight-bold">Get CV</button>
                     </div>
                 </div>
-                <img src={ imageFlorian } alt='Florian Assante' className='col-4' />
-                <nav className='col-3'>
-                    <ul>
-                        <li>
-                            <img src='#' alt='GitHub Logo' />
+                <div className="col-5">
+                    <img src={ imageFlorian } alt="Florian Assante" className="img-fluid" />
+                </div>
+                <nav id="social-networks" className="col-2 bg-white">
+                    <ul className="row mb-0">
+                        <li className="col-5">
+                            <button className="btn rounded-circle ">
+                                <img src={github} alt="GitHub Logo" className="zoom img-fluid rounded-circle shadow-sm" />
+                            </button>
                         </li>
-                        <li>
-                            <img src='#' alt='LinkedIn Logo' />
+                        <li className="col-5">
+                            <button className="btn rounded-circle">
+                                <img src={linkedIn} alt="LinkedIn Logo" className="zoom img-fluid rounded-circle shadow-sm" />
+                            </button>
                         </li>
                     </ul>
                 </nav>
