@@ -20,22 +20,25 @@
     font-style: normal;
 }
 
-body {
-    background-color: #F2F4F9;
-}
-
 h1 {
     font-family: 'Intro';
+    font-size: 2.9rem;
 }
 
-h2 {
+h2{
     font-family: 'Manrope-ExtraBold';
+    font-size: 2.2rem;
+}
+
+h3 {
+    font-size: 1.7rem;
 }
 
 p {
     font-family: 'Montserrat', sans-serif;
+    font-size: 1rem; 
 }
 
-.btn-danger, .btn-outline-warning {
-    border-radius: 40px;
+ul {
+    list-style-type: none;
 }
