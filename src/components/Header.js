@@ -8,18 +8,19 @@ export default class Header extends Component {
     render() {
         return (
             <Row as="header">
-                <Col lg="5">
+                <Col lg="6">
                     <div className="header-text">
                         <h3 className="text-primary"><span className="text-danger">HELLO</span>, I'M FLORIAN ASSANTE.</h3>
                         <h1 className="text-primary font-weight-bold">Web Developer</h1>
                         <p className="text-secondary font-weight-bold">Front-end, Webmarketing & love to play Video Games.</p>
                     </div>
-                    <Button type="button" variant="danger" href="#" className="btn-pink mr-3 shadow">Hire me</Button>
-                    <Button type="button" variant="outline-warning"  href="#" className="btn-pink mr-3">Get CV</Button>
-                    
+                    <div>
+                        <Button type="button" variant="danger" href="#" className="btn-pink mr-3 shadow">Hire me</Button>
+                        <Button type="button" variant="outline-warning"  href="#" className="btn-pink mr-3">Get CV</Button>
+                    </div>
                 </Col>
-                <Col lg="5">
-                    <Image src="/static/media/florian-assante.c7632d44.png" alt="Florian Assante" fluid />
+                <Col lg="4">
+                    <Image src={require('../images/florian-assante.png')} alt="Florian Assante" fluid />
                 </Col>
                 <Col lg="2" as="aside" id="social-networks" className="bg-white pt-1 pb-1">
                     <Row>
