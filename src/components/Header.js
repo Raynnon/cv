@@ -1,40 +1,37 @@
 import React, { Component } from 'react'
-import PinkButton from './subcomponents/PinkButton'
-import imageFlorian from '../images/florian-assante.png'
-import linkedIn from '../images/linkedin-logo.png'
-import github from '../images/github-logo.png'
+import Button from 'react-bootstrap/Button'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Image from 'react-bootstrap/Image'
 
 export default class Header extends Component {
     render() {
         return (
-            <header className="row">
-                <div class="col-5 mt-4">
+            <Row as="header">
+                <Col lg="5">
                     <div className="header-text">
                         <h3 className="text-primary"><span className="text-danger">HELLO</span>, I'M FLORIAN ASSANTE.</h3>
                         <h1 className="text-primary font-weight-bold">Web Developer</h1>
                         <p className="text-secondary font-weight-bold">Front-end, Webmarketing & love to play Video Games.</p>
                     </div>
-                    <PinkButton background={1} text={"Hire me"} />
-                    <PinkButton background={0} text={"Get CV"}/>
-                </div>
-                <div className="col-5">
-                    <img src={ imageFlorian } alt="Florian Assante" className="img-fluid" />
-                </div>
-                <nav id="social-networks" className="col-2 bg-white">
-                    <ul className="row mb-0">
-                        <li className="col-5">
-                            <button className="btn rounded-circle ">
-                                <img src={github} alt="GitHub Logo" className="zoom img-fluid rounded-circle shadow-sm" />
-                            </button>
-                        </li>
-                        <li className="col-5">
-                            <button className="btn rounded-circle">
-                                <img src={linkedIn} alt="LinkedIn Logo" className="zoom img-fluid rounded-circle shadow-sm" />
-                            </button>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
+                    <Button type="button" variant="danger" href="#" className="btn-pink mr-3 shadow">Hire me</Button>
+                    <Button type="button" variant="outline-warning"  href="#" className="btn-pink mr-3">Get CV</Button>
+                    
+                </Col>
+                <Col lg="5">
+                    <Image src="/static/media/florian-assante.c7632d44.png" alt="Florian Assante" fluid />
+                </Col>
+                <Col lg="2" as="aside" id="social-networks" className="bg-white pt-1 pb-1">
+                    <Row>
+                        <Col as="a" href="#">
+                            <i class="fab fa-linkedin zoom text-info"></i>
+                        </Col>
+                        <Col as="a" href="#">
+                            <i class="fab fa-github zoom"></i>
+                        </Col>
+                    </Row>
+                </Col>
+            </Row>
         )
     }
 }

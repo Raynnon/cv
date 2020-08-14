@@ -3,7 +3,6 @@ import Header from './components/Header';
 import './custom.scss';
 import './app.scss';
 import './styles/header.css'
-import './styles/pinkbutton.css'
 
 function App() {
   return (

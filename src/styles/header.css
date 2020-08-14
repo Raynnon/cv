@@ -1,13 +1,25 @@
 #social-networks {
-    border-top-left-radius: 50rem;
-    border-bottom-left-radius: 50rem;
-    height: 10%;
-    margin-top: 25%;
+    /*border-top-left-radius: 50rem;
+    border-bottom-left-radius: 50rem;*/
+    /*height: 4rem;*/
+    margin-top: 25rem;
+    margin-bottom: 5rem;
 }
 
 header {
     padding-top: 5rem;
     padding-left: 15%;
+}
+
+.btn-pink {
+    width: 150px;
+    padding: 1.2rem 0;
+    border-radius: 40px;
+    font-weight: bold;
+}
+
+.fab {
+    font-size: 50px;
 }
 
 .header-text {
