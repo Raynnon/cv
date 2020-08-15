@@ -1,9 +1,9 @@
 #social-networks {
-    /*border-top-left-radius: 50rem;
-    border-bottom-left-radius: 50rem;*/
+    border-top-left-radius: 50rem;
+    border-bottom-left-radius: 50rem;
     /*height: 4rem;*/
-    margin-top: 25rem;
-    margin-bottom: 5rem;
+    margin-top: 28rem;
+    margin-bottom: 17rem;
 }
 
 .btn-pink {
@@ -17,8 +17,8 @@
     font-size: 50px;
 }
 
-.header-text {
-    margin-bottom: 4rem;
+.florian {
+    height: 40rem;
 }
 
 .zoom {

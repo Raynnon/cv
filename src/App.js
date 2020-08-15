@@ -6,7 +6,7 @@ import './styles/header.css'
 
 function App() {
   return (
-    <div className="App bg-light container-fluid p-0">
+    <div className="App bg-light">
       <Header />
     </div>
   );
