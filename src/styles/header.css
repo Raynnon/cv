@@ -1,9 +1,10 @@
 #social-networks {
     border-top-left-radius: 50rem;
     border-bottom-left-radius: 50rem;
-    /*height: 4rem;*/
-    margin-top: 28rem;
-    margin-bottom: 17rem;
+}
+
+header {
+    height: 100vh;
 }
 
 .btn-pink {

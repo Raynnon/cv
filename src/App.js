@@ -3,12 +3,13 @@ import Header from './components/Header';
 import './custom.scss';
 import './app.scss';
 import './styles/header.css'
+import Container from 'react-bootstrap/Container'
 
 function App() {
   return (
-    <div className="App bg-light">
+    <Container className="App bg-light" fluid>
       <Header />
-    </div>
+    </Container>
   );
 }
 
