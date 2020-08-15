@@ -25,10 +25,10 @@ export default class Header extends Component {
                             </Row>
                         </Container>
                     </Col>
-                    <Col xl="3" className="d-flex justify-content-center align-items-end">
+                    <Col xl="4" className="d-flex justify-content-center align-items-end">
                         <Image src={require('../images/florian-assante.png')} alt="Florian Assante" fluid className="florian mt-5" />
                     </Col>
-                    <Col xl="3" as="aside" id="social-networks" className="bg-white pt-1 pb-1">
+                    <Col xl="2" as="aside" id="social-networks" className="bg-white pt-1 pb-1">
                         <Row className="text-center">
                             <Col as="a" href="#">
                                 <i className="fab fa-linkedin zoom text-info"></i>
