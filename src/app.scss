@@ -1,34 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
 
-@font-face {
-    font-family: 'Intro';
-    src:url('./styles/Intro.ttf.woff') format('woff'),
-        url('./styles/Intro.ttf.svg#Intro') format('svg'),
-        url('./styles/Intro.ttf.eot'),
-        url('./styles/Intro.ttf.eot?#iefix') format('embedded-opentype'); 
-    font-weight: normal;
-    font-style: normal;
+body {
+    font-family: 'Montserrat', sans-serif;
 }
 
-@font-face {
-    font-family: 'Manrope-ExtraBold';
-    src:url('./styles/Manrope-ExtraBold.ttf.woff') format('woff'),
-        url('./styles/Manrope-ExtraBold.ttf.svg#Manrope-ExtraBold') format('svg'),
-        url('./styles/Manrope-ExtraBold.ttf.eot'),
-        url('./styles/Manrope-ExtraBold.ttf.eot?#iefix') format('embedded-opentype'); 
-    font-weight: normal;
-    font-style: normal;
+.container-fluid {
+    padding: 0;
+}
+
+section {
+    margin: 5% 0;
+}
+
+#header button,
+ .row {
+    margin: 3% 0;
 }
 
 
 h1 {
-    font-family: 'Intro';
+    font-size: 3rem;
 }
 
 h2 {
-    font-family: 'Manrope-ExtraBold';
+    font-size: 2.5rem;
+}
+
+h1,
+h2 {
+    font-weight: 800;
+}
+
+section h3 {
+    text-align: center;
 }
 
 p {
-    font-family: 'Montserrat', sans-serif;
+    line-height: 2;
+    text-align: justify;
+}
+
+i {
+    font-size: 1.5rem;
+    color: #3EB9DE
+}
+
+/* Header */
+#header {
+    height: 100vh;
+    background-color: #0079bf;
+    color: #fff;
+    padding-left: 7%;
+    padding-top: 37vh;
+}
+
+#me {
+    color: #61BD4F;
+}
+
+#header button {
+    margin-right: 50px;
+}
+
+/* about me */
+#description {
+    margin-bottom: 6%;
+}
+
+#me {
+    max-height: 345px;
+}
+
+.hobbies {
+    margin-right: 1rem;
 }
