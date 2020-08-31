@@ -10,12 +10,9 @@ body {
     padding-right: 0;
 }
 
-.section {
+.section,
+.carousel {
     padding: 5% 15%;
-}
-
-#header button {
-    margin: 3% 0;
 }
 
 
@@ -44,12 +41,25 @@ p {
 
 i {
     font-size: 1.5rem;
-    color: #3EB9DE
+    color: #3EB9DE;
 }
 
 .coloured-section {
     background-color: #0079bf;
     color: #fff;
+}
+
+button.cta-button {
+    margin-right: 50px;
+    margin-top: 3%;
+}
+
+.btn {
+    width: 125px;
+}
+
+.btn-lg {
+    width: 180px;
 }
 
 /* Header */
@@ -63,17 +73,13 @@ i {
     color: #61BD4F;
 }
 
-#header button {
-    margin-right: 50px;
-}
-
 /* about me */
 #description {
     margin-bottom: 6%;
 }
 
-#me {
-    max-height: 345px;
+#my-face {
+    max-height: 310px;
 }
 
 .icons-row {
@@ -85,3 +91,25 @@ i {
 }
 
 /* Skills */
+.technologies .col,
+.technologies .col p {
+    text-align: center;
+}
+
+/* My Websites */
+#websites {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.image-col {
+    padding: 0 10%;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("./images/arrow-left.png");
+}
+
+.carousel-control-next-icon {
+    background-image: url("./images/arrow-right.png");
+}
