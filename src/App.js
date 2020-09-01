@@ -31,7 +31,7 @@ function App() {
       <Container id="about" className="section" as="section"  fluid>
         <h3>About me</h3>
         <Row>
-          <Col>
+          <Col className="text-center">
             <Image
               id="my-face"
               src={require("./images/florian-assante.jpg")}
@@ -158,7 +158,7 @@ function App() {
         <Carousel>
           <Carousel.Item>
             <Row>
-              <Col>
+              <Col className="my-auto">
                 <h4>My CV</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
                 lacinia erat id nisl efficitur condimentum. Nullam ac nisi at
@@ -174,7 +174,7 @@ function App() {
               <Col>
                 <Image
                 src={require("./images/cv.png")}
-                alt="Florian Assante"
+                alt="My CV"
                 fluid
                 rounded
                 />
@@ -183,7 +183,7 @@ function App() {
           </Carousel.Item>
           <Carousel.Item>
             <Row>
-              <Col>
+              <Col className="my-auto">
                 <h4>My CV</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
                 lacinia erat id nisl efficitur condimentum. Nullam ac nisi at
@@ -199,14 +199,55 @@ function App() {
               <Col>
                 <Image
                 src={require("./images/cv.png")}
-                alt="Florian Assante"
+                alt="My CV"
                 fluid
-                rounded
                 />
               </Col>
             </Row>
           </Carousel.Item>
         </Carousel> 
+      </Container>
+
+      <Container
+        id="projects"
+        className="section coloured-section"
+        as="section"
+        fluid
+      >
+        <h3>Small Projects</h3>
+        <Row>
+          <Col>
+            <Image src="https://via.placeholder.com/200" fluid rounded />
+            <p>Project</p>
+          </Col>
+          <Col>
+            <Image src="https://via.placeholder.com/200" fluid rounded />
+            <p>Project</p>
+          </Col>
+          <Col>
+            <Image src="https://via.placeholder.com/200" fluid rounded />
+            <p>Project</p>
+          </Col>
+          <Col>
+            <Image src="https://via.placeholder.com/200" fluid rounded />
+            <p>Project</p>
+          </Col>
+        </Row>
+      </Container>
+
+      <Container id="footer" as="footer" fluid>
+        <a href="header">
+          <Image src={require("./images/arrow-top.png")} alt="Top Arrow" />
+        </a>
+        <div id="social-networks">
+          <a href="#">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <p>© 2020 - Florian Assante</p>
       </Container>
     </Container>
   );
