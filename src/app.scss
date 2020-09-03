@@ -50,11 +50,6 @@ i {
     color: #fff;
 }
 
-button.cta-button {
-    margin-right: 50px;
-    margin-top: 3%;
-}
-
 .btn {
     width: 125px;
 }
@@ -67,18 +62,19 @@ button.cta-button {
 #header {
     height: 100vh;
     padding-left: 15%;
+    padding-right: 15%;
     padding-top: 37vh;
 }
 
-#me {
-    color: #61BD4F;
+@media (max-width: 1139px) {
+    #header {
+        padding-left: 3%;
+        padding-right: 3%;
+        text-align: center;
+    }
 }
 
 /* about me */
-#description {
-    margin-bottom: 6%;
-}
-
 #my-face {
     max-height: 310px;
 }
@@ -89,6 +85,13 @@ button.cta-button {
 
 .hobbies {
     margin-right: 1rem;
+}
+
+@media (max-width: 1199px) {
+    .icons-row {
+        margin-left: 0;
+        justify-content: center;
+    }
 }
 
 /* Skills */
@@ -109,7 +112,7 @@ button.cta-button {
 }
 
 .carousel-item .col {
-    padding: 0 3%;
+    padding: 0 4%;
 }
 
 .carousel-control-next-icon,
@@ -119,6 +122,15 @@ button.cta-button {
   filter: invert(1);
 }
 
+@media (max-width: 1198px) {
+    .carousel-item .row {
+        flex-direction: column-reverse;
+    }
+
+    .carousel-image {
+        margin-bottom: 1rem;
+    }
+}
 /* PROJECTS */
 #projects .col,
 #projects .col p {
@@ -126,11 +138,6 @@ button.cta-button {
 }
 
 /* FOOTER */
-footer,
-p {
-    text-align: center;
-}
-
 footer,
 footer i {
     color: #fff;

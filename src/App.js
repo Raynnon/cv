@@ -16,22 +16,24 @@ function App() {
     <Container fluid>
       <Container id="header" className="coloured-section" as="header" fluid>
         <h2>
-          Hello, I am <span id="me">Florian Assante</span>
+          Hello, I am <span className="text-secondary">Florian Assante</span>
         </h2>
         <h1>The self-made Web Developer.</h1>
-        <Button className="cta-button" variant="secondary" size="lg">
-          Contact me
-        </Button>
-        <Button className="cta-button" variant="outline-light" size="lg">
-          Download CV
-        </Button>
+        <div className="mt-5">
+          <Button className="mr-5" variant="secondary" size="lg">
+            Contact me
+          </Button>
+          <Button variant="outline-light" size="lg">
+            Download CV
+          </Button>
+        </div>
       </Container>
 
       {/* ABOUT ME */}
       <Container id="about" className="section" as="section"  fluid>
         <h3>About me</h3>
         <Row>
-          <Col className="text-center">
+          <Col className="text-center mb-3" xl={6}>
             <Image
               id="my-face"
               src={require("./images/florian-assante.jpg")}
@@ -40,7 +42,7 @@ function App() {
               rounded
             />
           </Col>
-          <Col>
+          <Col xl={6}>
             <p id="description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
               lacinia erat id nisl efficitur condimentum. Nullam ac nisi at
@@ -88,7 +90,7 @@ function App() {
       >
         <h3>Skills</h3>
         <h4>Front-end</h4>
-        <Row className="technologies">
+        <Row className="technologies justify-content-around" xs={3} md={5} >
           <Col>
             <Image src={require("./images/html5.png")} />
             <p>HTML</p>
@@ -112,7 +114,7 @@ function App() {
         </Row>
 
         <h4>Back-end</h4>
-        <Row className="technologies">
+        <Row className="technologies justify-content-around" xs={3} md={5}>
           <Col>
             <Image src={require("./images/nodejs.png")} />
             <p>NodeJS</p>
@@ -157,22 +159,20 @@ function App() {
         <h3>My Websites</h3>
         <Carousel>
           <Carousel.Item>
-            <Row>
+            <Row xs={1} xl={2}>
               <Col className="my-auto">
                 <h4>My CV</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-                lacinia erat id nisl efficitur condimentum. Nullam ac nisi at
-                mauris dignissim tristique eu et justo. Nam maximus efficitur
-                massa, eget mattis quam pellentesque ac.</p>
-                <Button className="cta-button" variant="secondary">
+                lacinia erat id nisl efficitur condimentum.</p>
+                <Button className="mr-5" variant="secondary">
                   See live
                 </Button>
-                <Button className="cta-button" variant="outline-dark">
+                <Button variant="outline-dark">
                   Source code
                 </Button>
               </Col>
-              <Col>
-                <Image
+              <Col className="carousel-image">
+                <Image 
                 src={require("./images/cv.png")}
                 alt="My CV"
                 fluid
@@ -182,21 +182,19 @@ function App() {
             </Row>
           </Carousel.Item>
           <Carousel.Item>
-            <Row>
+            <Row xs={1} xl={2}>
               <Col className="my-auto">
                 <h4>My CV</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-                lacinia erat id nisl efficitur condimentum. Nullam ac nisi at
-                mauris dignissim tristique eu et justo. Nam maximus efficitur
-                massa, eget mattis quam pellentesque ac.</p>
-                <Button className="cta-button" variant="secondary">
+                lacinia erat id nisl efficitur condimentum.</p>
+                <Button className="mr-5" variant="secondary">
                   See live
                 </Button>
-                <Button className="cta-button" variant="outline-dark">
+                <Button variant="outline-dark">
                   Source code
                 </Button>
               </Col>
-              <Col>
+              <Col className="carousel-image">
                 <Image
                 src={require("./images/cv.png")}
                 alt="My CV"
@@ -215,7 +213,7 @@ function App() {
         fluid
       >
         <h3>Small Projects</h3>
-        <Row>
+        <Row xl={4} lg={3} xs={2}>
           <Col>
             <Image src="https://via.placeholder.com/200" fluid rounded />
             <p>Project</p>
@@ -235,19 +233,19 @@ function App() {
         </Row>
       </Container>
 
-      <Container id="footer" as="footer" fluid>
+      <Container id="footer" className="text-center" as="footer" fluid>
         <a href="header">
           <Image src={require("./images/arrow-top.png")} alt="Top Arrow" />
         </a>
-        <div id="social-networks">
-          <a href="#">
+        <div id="social-networks" className="mt-3 mb-3">
+          <a href="https://www.linkedin.com/in/florianassante/" className="mr-3">
             <i class="fab fa-linkedin-in"></i>
           </a>
-          <a href="#">
+          <a href="https://github.com/Raynnon">
             <i class="fab fa-github"></i>
           </a>
         </div>
-        <p>© 2020 - Florian Assante</p>
+        <p className="text-center">© 2020 - Florian Assante</p>
       </Container>
     </Container>
   );
