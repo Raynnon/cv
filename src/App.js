@@ -12,15 +12,15 @@ import "./app.scss";
 
 function App() {
   return (
-    /* HEADER */
     <Container fluid>
+      {/* HEADER */}
       <Container id="header" className="coloured-section" as="header" fluid>
         <h2>
           Hello, I am <span className="text-secondary">Florian Assante</span>
         </h2>
         <h1>The self-made Web Developer.</h1>
         <div className="mt-5">
-          <Button className="mr-5" variant="secondary" size="lg">
+          <Button className="cta-button" variant="secondary" size="lg">
             Contact me
           </Button>
           <Button variant="outline-light" size="lg">
@@ -164,12 +164,14 @@ function App() {
                 <h4>My CV</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
                 lacinia erat id nisl efficitur condimentum.</p>
-                <Button className="mr-5" variant="secondary">
-                  See live
-                </Button>
-                <Button variant="outline-dark">
-                  Source code
-                </Button>
+                <div>
+                  <Button className="cta-button" variant="secondary">
+                    See live
+                  </Button>
+                  <Button className="cta-button" variant="outline-dark">
+                    Source code
+                  </Button>
+                </div>
               </Col>
               <Col className="carousel-image">
                 <Image 
@@ -187,12 +189,14 @@ function App() {
                 <h4>My CV</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
                 lacinia erat id nisl efficitur condimentum.</p>
-                <Button className="mr-5" variant="secondary">
-                  See live
-                </Button>
-                <Button variant="outline-dark">
-                  Source code
-                </Button>
+                <div>
+                  <Button className="cta-button" variant="secondary">
+                    See live
+                  </Button>
+                  <Button className="cta-button" variant="outline-dark">
+                    Source code
+                  </Button>
+                </div>
               </Col>
               <Col className="carousel-image">
                 <Image
@@ -234,7 +238,7 @@ function App() {
       </Container>
 
       <Container id="footer" className="text-center" as="footer" fluid>
-        <a href="header">
+        <a href="#header">
           <Image src={require("./images/arrow-top.png")} alt="Top Arrow" />
         </a>
         <div id="social-networks" className="mt-3 mb-3">
