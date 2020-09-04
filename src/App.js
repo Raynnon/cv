@@ -14,18 +14,20 @@ function App() {
   return (
     <Container fluid>
       {/* HEADER */}
-      <Container id="header" className="coloured-section" as="header" fluid>
-        <h2>
-          Hello, I am <span className="text-secondary">Florian Assante</span>
-        </h2>
-        <h1>The self-made Web Developer.</h1>
-        <div className="mt-5">
-          <Button className="cta-button" variant="secondary" size="lg">
-            Contact me
-          </Button>
-          <Button variant="outline-light" size="lg">
-            Download CV
-          </Button>
+      <Container id="header" className="coloured-section d-flex flex-column" as="header" fluid>
+        <div className="my-auto">
+          <h2 className="font-weight-bold">
+            Hello, I am <span className="text-secondary">Florian Assante</span>
+          </h2>
+          <h1 className="font-weight-bold display-4">The self-made Web Developer.</h1>
+          <div className="mt-5">
+            <Button className="cta-button" variant="secondary" size="lg">
+              Contact me
+            </Button>
+            <Button variant="outline-light" size="lg">
+              Download CV
+            </Button>
+          </div>
         </div>
       </Container>
 
@@ -155,9 +157,9 @@ function App() {
       </Container>
 
       {/* MY PROJECTS */}
-      <Container id="websites" className="section" as="section" fluid>
+      <Container id="websites" className="pr-0 pl-0 section" as="section" fluid>
         <h3>My Websites</h3>
-        <Carousel>
+        <Carousel className="pt-0 pb-0">
           <Carousel.Item>
             <Row xs={1} xl={2}>
               <Col className="my-auto">
@@ -237,7 +239,7 @@ function App() {
         </Row>
       </Container>
 
-      <Container id="footer" className="text-center" as="footer" fluid>
+      <Container id="footer" className="text-center pb-1 bg-dark" as="footer" fluid>
         <a href="#header">
           <Image src={require("./images/arrow-top.png")} alt="Top Arrow" />
         </a>
