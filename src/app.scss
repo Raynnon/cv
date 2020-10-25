@@ -107,6 +107,12 @@ i {
     text-align: center;
 }
 
+.learning {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+}
+
 /* My Websites */
 .carousel-item .col {
     padding: 0 4%;

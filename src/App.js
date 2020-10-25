@@ -46,13 +46,7 @@ function App() {
           </Col>
           <Col xl={6}>
             <p id="description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-              lacinia erat id nisl efficitur condimentum. Nullam ac nisi at
-              mauris dignissim tristique eu et justo. Nam maximus efficitur
-              massa, eget mattis quam pellentesque ac. Etiam tincidunt congue
-              fringilla. Nullam q uis lectus sapien. Praesent et mollis orci.
-              Suspendisse et eros sapien. In eget dapibus lorem. Nunc in tortor
-              dignissim, bibendum nibh a, porta risus.
+              After working for several years in the field of webmarketing I discovered a pronounced taste for development. So I decided to jump in and to train myself thanks to numerous tutorials, exercises, documentation on the internet and the help of web developer friends. I am now looking for a first experience in a company that will give me the opportunity to develop myself in this field.
             </p>
             <Row className="icons-row">
               <p className="hobbies">
@@ -94,63 +88,55 @@ function App() {
         <h4>Front-end</h4>
         <Row className="technologies justify-content-around" xs={3} md={5} >
           <Col>
-            <Image src={require("./images/html5.png")} />
+            <Image src={require("./images/html5.png")} alt="html" />
             <p>HTML</p>
           </Col>
           <Col>
-            <Image src={require("./images/css3.png")} />
+            <Image src={require("./images/css3.png")} alt="css" />
             <p>CSS</p>
           </Col>
           <Col>
-            <Image src={require("./images/bootstrap.png")} />
+            <Image src={require("./images/bootstrap.png")} alt="bootstrap" />
             <p>Bootstrap</p>
           </Col>
           <Col>
-            <Image src={require("./images/react.png")} />
+            <Image src={require("./images/react.png")} alt="react" />
             <p>React JS</p>
           </Col>
           <Col>
-            <Image src={require("./images/redux.png")} />
-            <p>Redux</p>
+            <Image className="learning" src={require("./images/redux.png")} alt="redux" />
+            <p>Redux (learning)</p>
           </Col>
         </Row>
 
         <h4>Back-end</h4>
         <Row className="technologies justify-content-around" xs={3} md={5}>
           <Col>
-            <Image src={require("./images/nodejs.png")} />
-            <p>NodeJS</p>
+            <Image className="learning" src={require("./images/nodejs.png")} alt="node" />
+            <p>NodeJS (learning)</p>
           </Col>
           <Col>
-            <Image src={require("./images/express.png")} />
-            <p>Express</p>
+            <Image className="learning" src={require("./images/express.png")} alt="express" />
+            <p>Express (learning)</p>
           </Col>
           <Col>
-            <Image src={require("./images/mongodb.png")} />
-            <p>MongoDB</p>
-          </Col>
-          <Col>
-            <Image src={require("./images/mongoose.png")} />
-            <p>Mongoose</p>
-          </Col>
-          <Col>
-            <Image src={require("./images/database.png")} />
-            <p>SQL</p>
+            <Image className="learning" src={require("./images/database.png")} alt="sql" />
+            <p>SQL (learning)</p>
           </Col>
         </Row>
 
         <h4>Utilities</h4>
         <Row className="technologies">
           <Col>
-            <Image src={require("./images/linux.png")} />
+            <Image src={require("./images/linux.png")} alt="linux" />
             <p>Linux</p>
           </Col>
           <Col>
-            <Image src={require("./images/git.png")} />
+            <Image src={require("./images/git.png")} alt="git" />
             <p>Git</p>
           </Col>
           <Col>
-            <Image src={require("./images/npm.png")} />
+            <Image src={require("./images/npm.png")} alt="npm" />
             <p>NPM</p>
           </Col>
         </Row>
@@ -218,7 +204,7 @@ function App() {
         as="section"
         fluid
       >
-        <h3>Small Projects</h3>
+        <h3>My laboratory</h3>
         <Row xl={4} lg={3} xs={2}>
           <Col>
             <Image src="https://via.placeholder.com/200" fluid rounded />
