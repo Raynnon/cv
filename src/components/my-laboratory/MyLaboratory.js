@@ -1,9 +1,9 @@
 import React from "react";
 
+import Project from "./project/Project";
+
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Image from "react-bootstrap/Image";
 
 const MyLaboratory = () => {
   return (
@@ -15,22 +15,11 @@ const MyLaboratory = () => {
     >
       <h3>My laboratory</h3>
       <Row xl={4} lg={3} xs={2}>
-        <Col>
-          <Image src="https://via.placeholder.com/200" fluid rounded />
-          <p>Project</p>
-        </Col>
-        <Col>
-          <Image src="https://via.placeholder.com/200" fluid rounded />
-          <p>Project</p>
-        </Col>
-        <Col>
-          <Image src="https://via.placeholder.com/200" fluid rounded />
-          <p>Project</p>
-        </Col>
-        <Col>
-          <Image src="https://via.placeholder.com/200" fluid rounded />
-          <p>Project</p>
-        </Col>
+        <Project name="Tea Cosy" image={require("./images/tea-cozy.png")} link="https://codepen.io/Raynnon/pen/dyyQYEr" />
+        <Project />
+        <Project />
+        <Project />
+        <Project />
       </Row>
     </Container>
   );
