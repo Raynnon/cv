@@ -1,0 +1,3 @@
+[submodule "src/components/my-websites/projects/tindog"]
+	path = src/components/my-websites/projects/tindog
+	url = https://github.com/Raynnon/tindog.git
