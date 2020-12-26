@@ -15,10 +15,10 @@ const Header = () => {
     >
       <div className="my-auto">
         <h2 className="font-weight-bold">
-          Hello, I am <span className="text-secondary">Florian Assante</span>
+          I am <span className="text-secondary">Florian</span>,
         </h2>
-        <h1 className="font-weight-bold display-4">
-          The self-made Web Developer.
+        <h1 className="font-weight-bold">
+          a full stack Web Developper
         </h1>
         <div className="mt-5">
           <Button

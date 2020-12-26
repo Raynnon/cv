@@ -46,27 +46,33 @@ const Skills = () => {
       <Row className="technologies justify-content-around" xs={3} md={5}>
         <Col>
           <Image
-            className="learning"
             src={require("../../images/nodejs.png")}
             alt="node"
           />
-          <p>NodeJS (learning)</p>
+          <p>NodeJS</p>
         </Col>
         <Col>
           <Image
-            className="learning"
             src={require("../../images/express.png")}
             alt="express"
           />
-          <p>Express (learning)</p>
+          <p>Express</p>
         </Col>
         <Col>
           <Image
-            className="learning"
-            src={require("../../images/database.png")}
-            alt="sql"
+            src={require("../../images/mongodb.png")}
+            alt="mongodb"
+			fluid
           />
-          <p>SQL (learning)</p>
+          <p>MongoDB</p>
+        </Col>
+		<Col>
+          <Image
+            className="learning"
+            src={require("../../images/mongoose.png")}
+            alt="mongoose"
+          />
+          <p>Mongoose</p>
         </Col>
       </Row>
 
