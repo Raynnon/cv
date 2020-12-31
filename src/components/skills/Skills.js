@@ -32,41 +32,27 @@ const Skills = () => {
           <Image src={require("../../images/react.png")} alt="react" />
           <p>React JS</p>
         </Col>
-        <Col>
-          <Image
-            className="learning"
-            src={require("../../images/redux.png")}
-            alt="redux"
-          />
-          <p>Redux (learning)</p>
-        </Col>
       </Row>
 
       <h4>Back-end</h4>
       <Row className="technologies justify-content-around" xs={3} md={5}>
         <Col>
-          <Image
-            src={require("../../images/nodejs.png")}
-            alt="node"
-          />
+          <Image src={require("../../images/nodejs.png")} alt="node" />
           <p>NodeJS</p>
         </Col>
         <Col>
-          <Image
-            src={require("../../images/express.png")}
-            alt="express"
-          />
+          <Image src={require("../../images/express.png")} alt="express" />
           <p>Express</p>
         </Col>
         <Col>
           <Image
             src={require("../../images/mongodb.png")}
             alt="mongodb"
-			fluid
+            fluid
           />
           <p>MongoDB</p>
         </Col>
-		<Col>
+        <Col>
           <Image
             className="learning"
             src={require("../../images/mongoose.png")}

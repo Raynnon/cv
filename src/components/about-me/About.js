@@ -10,15 +10,6 @@ const About = () => {
     <Container id="about" className="section" as="section" fluid>
       <h3>About me</h3>
       <Row>
-        <Col className="text-center mb-3" xl={6}>
-          <Image
-            id="my-face"
-            src={require("./florian-assante.jpg")}
-            alt="Florian Assante"
-            fluid
-            rounded
-          />
-        </Col>
         <Col xl={6}>
           <p id="description">
             After working for several years in the field of webmarketing I
@@ -28,6 +19,8 @@ const About = () => {
             I am now looking for a first experience in a company that will give
             me the opportunity to develop myself in this field.
           </p>
+        </Col>
+        <Col xl={6}>
           <Row className="icons-row">
             <p className="hobbies">
               <i className="fas fa-globe-europe"></i> French

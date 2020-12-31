@@ -6,7 +6,7 @@ import Image from "react-bootstrap/Image";
 const Project = ({ name, image, link }) => {
   return (
     <Col>
-      <a href={link} target="_blank">
+      <a href={link} class="text-decoration-none text-white">
         <Image src={image} alt={name} fluid rounded />
         <p>{name}</p>
       </a>
