@@ -6,6 +6,7 @@ import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import Button from "react-bootstrap/Button";
 
+import florianImage from "./florian-assante.png";
 import CV from "./CV-FlorianAssante-English-2020.pdf";
 
 const Header = () => {
@@ -45,7 +46,7 @@ const Header = () => {
           <Image
             style={{ maxWidth: "200px" }}
             id="my-face"
-            src={require("../../images/florian-assante.png")}
+            src={florianImage}
             alt="Florian Assante"
             fluid
             rounded

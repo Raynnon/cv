@@ -6,7 +6,7 @@ import Carousel from "react-bootstrap/Carousel";
 
 import blogImage from "./images/simple-blog.png";
 import cvImage from "./images/cv.png";
-import tindogImage from "./images/tindog.png";
+import weatherImage from "./images/weather-app.jpg";
 
 const MyWebsites = () => {
   return (
@@ -15,11 +15,10 @@ const MyWebsites = () => {
       <Carousel className="pt-0 pb-0">
         <Carousel.Item>
           <ItemContent
-            name="Tindog"
-            liveLink="https://tindog.florian-assante.com/"
-            sourceLink="https://github.com/Raynnon/tindog"
-            description="Simple landing page made in HTML/CSS + Bootstrap"
-            image={tindogImage}
+            name="The Weather App (01/2021)"
+            liveLink="https://weather.florian-assante.com"
+            description="A weather app created with EJS and Express"
+            image={weatherImage}
           />
         </Carousel.Item>
 

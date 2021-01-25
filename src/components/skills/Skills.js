@@ -25,6 +25,10 @@ const Skills = () => {
           <p>CSS</p>
         </Col>
         <Col>
+          <Image src={require("../../images/sass.png")} alt="bootstrap" />
+          <p>Sass</p>
+        </Col>
+        <Col>
           <Image src={require("../../images/bootstrap.png")} alt="bootstrap" />
           <p>Bootstrap</p>
         </Col>
@@ -61,7 +65,21 @@ const Skills = () => {
           <p>Mongoose</p>
         </Col>
       </Row>
-
+      <h4>Server</h4>
+      <Row className="technologies">
+        <Col>
+          <Image src={require("../../images/nginx.png")} alt="linux" />
+          <p>nginx</p>
+        </Col>
+        <Col>
+          <Image src={require("../../images/certbot.png")} alt="git" />
+          <p>cerbot</p>
+        </Col>
+        <Col>
+          <Image src={require("../../images/pm2.png")} alt="npm" />
+          <p>pm2</p>
+        </Col>
+      </Row>
       <h4>Utilities</h4>
       <Row className="technologies">
         <Col>
