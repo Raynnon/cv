@@ -4,8 +4,8 @@ import ItemContent from "./carousel-item/ItemContent";
 import Container from "react-bootstrap/Container";
 import Carousel from "react-bootstrap/Carousel";
 
-import blogImage from "./images/simple-blog.png";
-import cvImage from "./images/cv.png";
+import blogImage from "./images/simple-blog.jpg";
+import cvImage from "./images/cv.jpg";
 import weatherImage from "./images/weather-app.jpg";
 
 const MyWebsites = () => {

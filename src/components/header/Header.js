@@ -8,8 +8,12 @@ import Button from "react-bootstrap/Button";
 
 import florianImage from "./florian-assante.png";
 import CV from "./CV-FlorianAssante-English-2020.pdf";
+import HeaderModal from "./HeaderModal";
+import EmailAPIConnect from "./email/EmailAPIConnect";
 
 const Header = () => {
+  const [modalShow, setModalShow] = React.useState(false);
+
   return (
     <Container
       id="header"
@@ -18,6 +22,7 @@ const Header = () => {
       fluid
     >
       <Row className="my-auto">
+        <EmailAPIConnect />
         <Col xl={6}>
           <h2 className="font-weight-bold">
             I am <span className="text-secondary">Florian</span>,
@@ -28,10 +33,13 @@ const Header = () => {
               className="cta-button"
               variant="secondary"
               size="lg"
-              target="blank"
+              onClick={() => setModalShow(true)}
             >
               Contact me
             </Button>
+
+            <HeaderModal show={modalShow} onHide={() => setModalShow(false)} />
+
             <Button
               href={CV}
               download="CV - Florian Assante - English - 2020"

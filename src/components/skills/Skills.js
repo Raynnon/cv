@@ -73,7 +73,7 @@ const Skills = () => {
         </Col>
         <Col>
           <Image src={require("../../images/certbot.png")} alt="git" />
-          <p>cerbot</p>
+          <p>certbot</p>
         </Col>
         <Col>
           <Image src={require("../../images/pm2.png")} alt="npm" />
