@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
-import emailjs from "emailjs-com";
+import axios from "axios";
 
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
@@ -23,11 +23,15 @@ export default class HeaderModal extends Component {
   }
 
   handleChange(event) {
-    const obj = {};
-    const key = event.target.id;
-    obj[key] = event.target.value;
+    if (event.target.id === "text-area") {
+      this.setState({message: event.target.value});
+    } else {
+      const obj = {};
+      const key = event.target.id;
+      obj[key] = event.target.value;
 
-    this.setState(obj);
+      this.setState(obj);
+    }
   }
 
   handleRecaptchaChange() {
@@ -36,7 +40,7 @@ export default class HeaderModal extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    if (this.state.recaptcha) {
+    /*if (this.state.recaptcha) {*/
       const { name, company, email, message } = this.state;
       const templateParams = {
         name,
@@ -44,19 +48,14 @@ export default class HeaderModal extends Component {
         email,
         message,
       };
-      const serviceId = process.env.REACT_APP_SERVICEID;
-      const templateId = process.env.REACT_APP_TEMPLATEID;
-      const userId = process.env.REACT_APP_USERID;
 
-      emailjs.send(serviceId, templateId, templateParams, userId).then(
-        (response) => {
-          console.log("SUCCESS!", response.status, response.text);
-        },
-        (error) => {
-          console.log("FAILED...", error);
-        }
-      );
-    }
+      axios.post("http://127.0.0.1:4000/mail",  templateParams)
+      .then(console.log('SUCCESS'))
+      .catch((error) => {
+        console.log(error);
+      })
+      /*
+    }*/
   }
 
   render() {
