@@ -45,7 +45,7 @@ const Header = () => {
 
             <Button
               href={CV}
-              download="CV - Florian Assante - English - 2020"
+              download="CV - Florian Assante - English - 2021"
               variant="outline-light"
               size="lg"
             >
