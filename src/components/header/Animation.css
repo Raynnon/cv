@@ -1,3 +1,10 @@
+@media screen and (max-width: 900px), screen and (max-height: 783px) {
+    .wave {
+        display:none;
+        background-color: #0079bf;
+    }
+}
+
 @keyframes move_wave {
     0% {
         transform: translateX(0) translateZ(0) scaleY(1)

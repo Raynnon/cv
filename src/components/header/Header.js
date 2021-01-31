@@ -1,6 +1,6 @@
 import React from "react";
 import HeaderModal from "./HeaderModal";
-import {HeaderAnimation} from "./HeaderAnimation";
+import { HeaderAnimation } from "./HeaderAnimation";
 
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -10,7 +10,7 @@ import Button from "react-bootstrap/Button";
 
 import florianImage from "./florian-assante.png";
 
-import CV from "./CV-FlorianAssante-English-2020.pdf";
+import CV from "./CV-Florian-Assante-English-2021.pdf";
 
 const Header = () => {
   const [modalShow, setModalShow] = React.useState(false);
@@ -21,14 +21,16 @@ const Header = () => {
       className="d-flex flex-column" //coloured-section
       as="header"
       fluid
-    > 
+    >
       <HeaderAnimation />
       <Row className="my-auto">
         <Col xl={6}>
           <h2 className="font-weight-bold text-white">
             I am <span className="text-secondary">Florian</span>,
           </h2>
-          <h1 className="font-weight-bold text-white">a full stack Web Developper</h1>
+          <h1 className="font-weight-bold text-white">
+            a full stack Web Developer
+          </h1>
           <div className="mt-5 mb-5">
             <Button
               className="cta-button"

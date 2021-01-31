@@ -16,7 +16,7 @@ const About = () => {
             in and to train myself thanks to numerous tutorials, exercises,
             documentation on the internet and the help of web developer friends.
             I am now looking for a first experience in a company that will give
-            me the opportunity to develop myself in this field.
+            me the opportunity to grow up in this field.
           </p>
         </Col>
         <Col xl={6}>

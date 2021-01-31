@@ -17,24 +17,23 @@ const MyWebsites = () => {
           <ItemContent
             name="The Weather App (01/2021)"
             liveLink="https://weather.florian-assante.com"
-            description="A weather app created with EJS and Express"
+            description="A weather app created with EJS and Express using the Weatherbit API. Ask for the source code if you need. :)"
             image={weatherImage}
           />
         </Carousel.Item>
 
         <Carousel.Item>
           <ItemContent
-            name="Simple Blog"
+            name="Simple Blog (12/2020)"
             liveLink="https://desolate-earth-07791.herokuapp.com/"
-            sourceLink="https://github.com/Raynnon/blog"
-            description="Simple blog made with EJS, Express and MongoDB"
+            description="Simple blog made with EJS, Express and MongoDB from a Bootstrap template. Ask for the source code if you need. :)"
             image={blogImage}
           />
         </Carousel.Item>
 
         <Carousel.Item>
           <ItemContent
-            name="CV"
+            name="CV (11/2020)"
             liveLink="http://localhost:3000/"
             sourceLink="https://github.com/Raynnon/cv"
             description="This is my personal CV made with React + React Bootstrap"

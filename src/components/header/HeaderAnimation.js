@@ -4,7 +4,7 @@ import './Animation.css';
 
 export const HeaderAnimation = () => {
     return (
-        <div className="waveWrapper waveAnimation">
+        <div id="wave" className="waveWrapper waveAnimation">
             <div className="waveWrapperInner bgTop">
                 <div className="wave waveTop" style={{backgroundImage: `url('http://front-end-noobs.com/jecko/img/wave-top.png')`}}></div>
             </div>
