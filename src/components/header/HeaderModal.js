@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
-import axios from "axios";
+import emailjs  from "emailjs-com";
 
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
@@ -39,23 +39,29 @@ export default class HeaderModal extends Component {
   }
 
   handleSubmit(event) {
-    event.preventDefault();
-    /*if (this.state.recaptcha) {*/
+    if (this.state.recaptcha) {
       const { name, company, email, message } = this.state;
       const templateParams = {
         name,
         company,
         email,
         message,
-      };
+      }; 
+      
+      const serviceId = process.env.REACT_APP_SERVICEID;
+      const templateId = process.env.REACT_APP_TEMPLATEID;
+      const userId = process.env.REACT_APP_USERID;
 
-      axios.post("http://127.0.0.1:4000/mail",  templateParams)
-      .then(console.log('SUCCESS'))
-      .catch((error) => {
-        console.log(error);
-      })
-      /*
-    }*/
+      emailjs.send(serviceId, templateId, templateParams, userId).then(
+      (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+      },
+      (error) => {
+          console.log("FAILED...", error);
+      }).then(
+        alert("Email Sent")
+      )
+    }
   }
 
   render() {
@@ -107,14 +113,13 @@ export default class HeaderModal extends Component {
                 onChange={this.handleRecaptchaChange}
               />
             </Form.Group>
-
-            <Button
-              className="cta-button float-right mr-0"
-              variant="secondary"
-              type="submit"
-            >
-              Send
-            </Button>
+              <Button
+                className="cta-button float-right mr-0"
+                variant="secondary"
+                type="submit"
+              >
+                Send
+              </Button>
           </Form>
         </Modal.Body>
       </Modal>
