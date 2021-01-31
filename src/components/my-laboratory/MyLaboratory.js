@@ -16,16 +16,16 @@ const MyLaboratory = () => {
       <h3>My laboratory</h3>
       <Row xl={4} lg={3} xs={2}>
         <Project
-          name="Tindog"
+          name="Tindog (08/2020)"
           technologies="HTML, CSS, Bootstrap"
           image={require("./images/tindog.jpg")}
           link="https://tindog.florian-assante.com/"
         />
         <Project
-          name="Tea Cosy"
-          technologies="HTML, CSS, Bootstrap"
-          image={require("./images/tea-cozy.png")}
-          link="https://codepen.io/Raynnon/pen/dyyQYEr"
+          name="CodePen Projects (2018/2019)"
+          technologies="old projects made with Bootstrap"
+          image={require("./images/codepen.png")}
+          link="https://codepen.io/Raynnon"
         />
         <Project />
         <Project />
