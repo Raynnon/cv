@@ -12,9 +12,9 @@ const Project = ({ name, technologies, image, link }) => {
 
   return (
     <Col>
-      <a href={link} class="text-decoration-none text-white">
+      <a href={link} className="text-decoration-none text-white">
         <Image src={image} alt={name} fluid rounded />
-        <p class="mb-0">{name}</p>
+        <p className="mb-0">{name}</p>
         <p>{technoText}</p>
       </a>
     </Col>

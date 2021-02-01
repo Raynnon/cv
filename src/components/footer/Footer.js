@@ -16,10 +16,10 @@ const Footer = () => {
       </a>
       <div id="social-networks" className="mt-3 mb-3">
         <a href="https://www.linkedin.com/in/florianassante/" className="mr-3">
-          <i class="fab fa-linkedin-in"></i>
+          <i className="fab fa-linkedin-in"></i>
         </a>
         <a href="https://github.com/Raynnon">
-          <i class="fab fa-github"></i>
+          <i className="fab fa-github"></i>
         </a>
       </div>
       <p className="text-center">© 2020 - Florian Assante</p>
