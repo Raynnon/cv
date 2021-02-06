@@ -15,26 +15,25 @@ export default function HeaderModal(props) {
   const [recaptcha, setRecaptcha] = useState(0);
 
   const handleChange = (event) => {
-    if (event.target.id === "text-area") {
-      setMessage({ message: event.target.value });
-    } else {
-      const obj = {};
-      const key = event.target.id;
-      obj[key] = event.target.value;
+    const obj = {};
+    const key = event.target.id;
+    obj[key] = event.target.value;
 
-      switch (event.target.id) {
-        case "name":
-          setName(obj[key]);
-          break;
-        case "company":
-          setCompany(obj[key]);
-          break;
-        case "email":
-          setEmail(obj[key]);
-          break;
-        default:
-          break;
-      }
+    switch (event.target.id) {
+      case "name":
+        setName(obj[key]);
+        break;
+      case "company":
+        setCompany(obj[key]);
+        break;
+      case "email":
+        setEmail(obj[key]);
+        break;
+      case "text-area":
+        setMessage(event.target.value);
+        break;
+      default:
+        break;
     }
   };
 
