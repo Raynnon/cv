@@ -1,6 +1,5 @@
 import React from "react";
 import HeaderModal from "./HeaderModal";
-import { HeaderAnimation } from "./HeaderAnimation";
 
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -18,11 +17,10 @@ const Header = () => {
   return (
     <Container
       id="header"
-      className="d-flex flex-column" //coloured-section
+      className="d-flex flex-column section coloured-section" //coloured-section
       as="header"
       fluid
     >
-      <HeaderAnimation />
       <Row className="my-auto">
         <Col xl={6}>
           <h2 className="font-weight-bold text-white">
