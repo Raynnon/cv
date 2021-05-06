@@ -1,7 +1,6 @@
 import React from "react";
 
 import Header from "./components/header/Header";
-import About from "./components/about-me/About";
 import Skills from "./components/skills/Skills";
 import MyWebsites from "./components/my-websites/MyWebsites";
 import MyLaboratory from "./components/my-laboratory/MyLaboratory";
@@ -16,7 +15,6 @@ export default function App() {
   return (
     <Container fluid>
       <Header />
-      <About />
       <Skills />
       <MyWebsites />
       <MyLaboratory />

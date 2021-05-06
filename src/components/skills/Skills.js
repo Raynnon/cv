@@ -13,25 +13,30 @@ import reactLogo from "../../images/react.png";
 import nodejsLogo from "../../images/nodejs.png";
 import expressLogo from "../../images/express.png";
 import mongodbLogo from "../../images/mongodb.png";
-import mongooseLogo from "../../images/mongoose.png";
-import nginxLogo from "../../images/nginx.png";
-import certbotLogo from "../../images/certbot.png";
-import pm2Logo from "../../images/pm2.png";
 import linuxLogo from "../../images/linux.png";
 import gitLogo from "../../images/git.png";
-import npmLogo from "../../images/npm.png";
+import photoshopLogo from "../../images/photoshop.png";
+import figmaLogo from "../../images/figma.png";
 
 const Skills = () => {
   return (
     <Container
       id="skills"
-      className="section coloured-section"
+      className="bg-secondary text-center py-5"
       as="section"
       fluid
+      style={{ padding: "0 20%" }}
     >
-      <h3>Skills</h3>
-      <h4>Front-end</h4>
-      <Row className="technologies justify-content-around" xs={3} md={5}>
+      <h2 className="mb-5">Skills</h2>
+      <Row
+        className="technologies justify-content-around justify-content-center mb-4"
+        xs={3}
+        md={5}
+      >
+        <Col>
+          <Image src={reactLogo} alt="react" />
+          <p>React JS</p>
+        </Col>
         <Col>
           <Image src={htmlLogo} alt="html" />
           <p>HTML</p>
@@ -41,21 +46,16 @@ const Skills = () => {
           <p>CSS</p>
         </Col>
         <Col>
-          <Image src={sassLogo} alt="bootstrap" />
-          <p>Sass</p>
-        </Col>
-        <Col>
           <Image src={bootstrapLogo} alt="bootstrap" />
           <p>Bootstrap</p>
         </Col>
         <Col>
-          <Image src={reactLogo} alt="react" />
-          <p>React JS</p>
+          <Image src={sassLogo} alt="sass" />
+          <p>Sass</p>
         </Col>
       </Row>
 
-      <h4>Back-end</h4>
-      <Row className="technologies justify-content-around" xs={3} md={5}>
+      <Row className="technologies justify-content-around mb-4" xs={3} md={5}>
         <Col>
           <Image src={nodejsLogo} alt="node" />
           <p>NodeJS</p>
@@ -68,27 +68,8 @@ const Skills = () => {
           <Image src={mongodbLogo} alt="mongodb" fluid />
           <p>MongoDB</p>
         </Col>
-        <Col>
-          <Image src={mongooseLogo} alt="mongoose" />
-          <p>Mongoose</p>
-        </Col>
       </Row>
-      <h4>Server</h4>
-      <Row className="technologies">
-        <Col>
-          <Image src={nginxLogo} alt="linux" />
-          <p>nginx</p>
-        </Col>
-        <Col>
-          <Image src={certbotLogo} alt="git" />
-          <p>certbot</p>
-        </Col>
-        <Col>
-          <Image src={pm2Logo} alt="npm" />
-          <p>pm2</p>
-        </Col>
-      </Row>
-      <h4>Utilities</h4>
+
       <Row className="technologies">
         <Col>
           <Image src={linuxLogo} alt="linux" />
@@ -99,8 +80,12 @@ const Skills = () => {
           <p>Git</p>
         </Col>
         <Col>
-          <Image src={npmLogo} alt="npm" />
-          <p>NPM</p>
+          <Image src={photoshopLogo} alt="photoshop" />
+          <p>Photoshop</p>
+        </Col>
+        <Col>
+          <Image src={figmaLogo} alt="figma" />
+          <p>Figma</p>
         </Col>
       </Row>
     </Container>
