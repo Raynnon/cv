@@ -51,7 +51,6 @@ const Skills = () => {
         </Col>
         <Col>
           <Image src={sassLogo} alt="sass" />
-          <p>Sass</p>
         </Col>
       </Row>
 
@@ -62,7 +61,6 @@ const Skills = () => {
         </Col>
         <Col>
           <Image src={expressLogo} alt="express" />
-          <p>Express</p>
         </Col>
         <Col>
           <Image src={mongodbLogo} alt="mongodb" fluid />

@@ -109,7 +109,7 @@ export default function HeaderModal(props) {
           </Form.Group>
           <Button
             className="cta-button float-right mr-0"
-            variant="secondary"
+            variant="primary"
             type="submit"
           >
             Send

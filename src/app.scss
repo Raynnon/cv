@@ -28,7 +28,7 @@ h2 {
   font-size: 3rem;
 }
 h1 {
-  font-size: 4.5rem;
+  font-size: 3.9rem;
 }
 
 p {
@@ -46,7 +46,7 @@ p {
   margin-right: 3rem;
 }
 
-@media (max-width: 512px) {
+@media (max-width: 721px) {
   .cta-button {
     display: block;
     margin-left: auto;
@@ -55,16 +55,51 @@ p {
   }
 }
 
-/* Header */
 #header {
   height: 100vh;
 }
 
-@media (max-width: 1139px) {
+#me {
+  max-height: 80vh;
+  background: url(./components/header/florian-assante.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right top;
+}
+
+#myPicture {
+  display: none;
+}
+
+@media (max-width: 1199px) {
   #header {
-    padding-left: 3%;
-    padding-right: 3%;
+    height: auto;
     text-align: center;
+    padding-bottom: 48px;
+  }
+
+  #introduction {
+    text-align: center;
+  }
+
+  #computer {
+    display: none;
+  }
+
+  #me {
+    background: none;
+  }
+
+  #myPicture {
+    display: inline-block;
+    max-height: 300px;
+    height: 40vh;
+  }
+}
+
+@media (max-width: 954px) {
+  #introduction {
+    text-align: justify;
   }
 }
 
