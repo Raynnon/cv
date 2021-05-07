@@ -29,61 +29,78 @@ const Skills = () => {
     >
       <h2 className="mb-5">Skills</h2>
       <Row
-        className="technologies justify-content-around justify-content-center mb-4"
+        className="technologies justify-content-around justify-content-center mb-5"
         xs={3}
         md={5}
       >
-        <Col>
+        <Col className="animated">
           <Image src={reactLogo} alt="react" />
-          <p>React JS</p>
+          <div className="middle">
+            <p>React JS</p>
+          </div>
         </Col>
-        <Col>
+        <Col className="animated">
           <Image src={htmlLogo} alt="html" />
-          <p>HTML</p>
+          <div className="middle">
+            <p>HTML</p>
+          </div>
         </Col>
-        <Col>
+        <Col className="animated">
           <Image src={cssLogo} alt="css" />
-          <p>CSS</p>
+          <div className="middle">
+            <p>CSS</p>
+          </div>
         </Col>
-        <Col>
+        <Col className="animated">
           <Image src={bootstrapLogo} alt="bootstrap" />
-          <p>Bootstrap</p>
+          <div className="middle mx-auto">
+            <p>Bootstrap</p>
+          </div>
         </Col>
         <Col>
           <Image src={sassLogo} alt="sass" />
         </Col>
       </Row>
 
-      <Row className="technologies justify-content-around mb-4" xs={3} md={5}>
+      <Row className="technologies justify-content-around mb-5" xs={3} md={5}>
         <Col>
           <Image src={nodejsLogo} alt="node" />
-          <p>NodeJS</p>
         </Col>
         <Col>
           <Image src={expressLogo} alt="express" />
         </Col>
-        <Col>
+        <Col className="animated">
           <Image src={mongodbLogo} alt="mongodb" fluid />
-          <p>MongoDB</p>
+          <div className="middle">
+            <p>MongoDB</p>
+          </div>
         </Col>
       </Row>
 
       <Row className="technologies">
-        <Col>
+        <Col className="animated">
           <Image src={linuxLogo} alt="linux" />
-          <p>Linux</p>
+          <div className="middle">
+            <p>Linux</p>
+          </div>
         </Col>
-        <Col>
+        <Col className="animated">
           <Image src={gitLogo} alt="git" />
-          <p>Git</p>
+          <div className="middle">
+            <p>Git</p>
+          </div>
         </Col>
-        <Col>
+        <Col className="animated">
           <Image src={photoshopLogo} alt="photoshop" />
-          <p>Photoshop</p>
+          <div className="middle">
+            <p>Photoshop</p>
+          </div>
         </Col>
-        <Col>
+        <Col className="animated">
           <Image src={figmaLogo} alt="figma" />
-          <p>Figma</p>
+          <div className="middle">
+            <p>Figma</p>
+          </div>
         </Col>
       </Row>
     </Container>
