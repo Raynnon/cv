@@ -22,12 +22,12 @@ const Skills = () => {
   return (
     <Container
       id="skills"
-      className="bg-secondary text-center py-5"
+      className="bg-secondary pb-5"
       as="section"
       fluid
       style={{ padding: "0 20%" }}
     >
-      <h2 className="mb-5">Skills</h2>
+      <h2>Skills</h2>
       <Row
         className="technologies justify-content-around justify-content-center mb-5"
         xs={3}

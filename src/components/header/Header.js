@@ -26,7 +26,7 @@ const Header = () => {
             <p id="introduction" className="mt-3">
               I am a <span className="font-weight-normal">web developer</span> &
               webmarketer. I am currently open to new projects so feel free to
-              email me :)
+              email me! :)
             </p>
 
             <div className="mt-5">
@@ -45,6 +45,7 @@ const Header = () => {
               />
 
               <Button
+                className="cta-second"
                 href={CV}
                 download="CV - Florian Assante - English - 2021"
                 variant="outline-primary"

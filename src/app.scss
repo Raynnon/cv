@@ -35,6 +35,17 @@ h1 {
   font-size: 3.9rem;
 }
 
+h2 {
+  padding: 48px 0;
+  margin: 0;
+}
+
+h2,
+h3,
+.description {
+  text-align: center;
+}
+
 p {
   font-size: 1.5rem;
   line-height: 2;
@@ -46,16 +57,19 @@ p {
   width: 180px;
 }
 
-.cta-button {
-  margin-right: 3rem;
+.cta-second {
+  margin-left: 3rem;
 }
 
 @media (max-width: 721px) {
   .cta-button {
-    display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5%;
+  }
+
+  .cta-second {
+    margin-left: 0;
   }
 }
 
@@ -145,6 +159,21 @@ p {
 
 .middle:hover {
   opacity: 1;
+}
+
+/* WWBSITES*/
+.websites {
+  margin: 0 14% 48px 14%;
+}
+
+.website-image {
+  box-shadow: 20px 15px 2px #f2f2f2;
+}
+
+@media (max-width: 1199px) {
+  .website-image {
+    box-shadow: none;
+  }
 }
 
 /* PROJECTS */
