@@ -9,7 +9,7 @@ import weatherImage from "./images/weather-app.jpg";
 
 const MyWebsites = () => {
   return (
-    <Container className="pr-0 pl-0 section" as="section" fluid>
+    <Container id="my-websites" className="pr-0 pl-0" as="section" fluid>
       <h2>My Websites</h2>
       <ItemContent
         name="The Weather App (01/2021)"

@@ -162,8 +162,12 @@ p {
 }
 
 /* WWBSITES*/
+#my-websites .websites:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
 .websites {
-  margin: 0 14% 48px 14%;
+  margin: 0 14% 70px 14%;
 }
 
 .website-image {
@@ -173,6 +177,7 @@ p {
 @media (max-width: 1199px) {
   .website-image {
     box-shadow: none;
+    margin-bottom: 30px;
   }
 }
 
