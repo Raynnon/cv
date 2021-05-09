@@ -18,7 +18,7 @@ const ItemContent = (props) => {
       </Col>
       <Col xs={12} xl={6} className="d-flex flex-column justify-content-center">
         <h3>{props.name}</h3>
-        <p class="description" style={{ fontSize: "1rem" }}>
+        <p className="description" style={{ fontSize: "1rem" }}>
           {props.description}
         </p>
         <Row className="justify-content-center">
@@ -29,6 +29,7 @@ const ItemContent = (props) => {
               href={props.liveLink}
               size="lg"
               style={{ fontSize: "1rem" }}
+              target="_blank"
             >
               See Live
             </Button>
@@ -40,8 +41,10 @@ const ItemContent = (props) => {
             <Button
               className="cta-second"
               variant="outline-primary"
+              href={props.sourceLink}
               size="lg"
               style={{ fontSize: "1rem" }}
+              target="_blank"
             >
               Source Code
             </Button>

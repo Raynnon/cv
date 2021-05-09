@@ -6,7 +6,12 @@ import Image from "react-bootstrap/Image";
 const Project = ({ name, technologies, image, link }) => {
   return (
     <Col>
-      <a href={link} className="text-decoration-none">
+      <a
+        href={link}
+        className="text-decoration-none"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <Image src={image} alt={name} fluid />
         <h3 className="mt-2 mb-0" style={{ fontSize: "1.2rem" }}>
           {name}

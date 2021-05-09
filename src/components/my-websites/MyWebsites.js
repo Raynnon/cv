@@ -4,7 +4,6 @@ import ItemContent from "./ItemContent";
 import Container from "react-bootstrap/Container";
 
 import organisemeImage from "./images/organise-me.jpg";
-import blogImage from "./images/simple-blog.jpg";
 import cvImage from "./images/cv.jpg";
 import weatherImage from "./images/weather-app.jpg";
 
@@ -31,7 +30,6 @@ const MyWebsites = () => {
       <ItemContent
         name="CV (05/2021)"
         imageAlt="cv-florian-assante"
-        liveLink="http://localhost:3000/"
         sourceLink="https://github.com/Raynnon/cv"
         description="This is my personal CV made with React + React Bootstrap"
         image={cvImage}
