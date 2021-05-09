@@ -3,6 +3,7 @@ import React from "react";
 import ItemContent from "./ItemContent";
 import Container from "react-bootstrap/Container";
 
+import organisemeImage from "./images/organise-me.jpg";
 import blogImage from "./images/simple-blog.jpg";
 import cvImage from "./images/cv.jpg";
 import weatherImage from "./images/weather-app.jpg";
@@ -12,6 +13,14 @@ const MyWebsites = () => {
     <Container id="my-websites" className="pr-0 pl-0" as="section" fluid>
       <h2>My Websites</h2>
       <ItemContent
+        name="Organise Me (04/2021)"
+        imageAlt="organise-me"
+        liveLink="https://organiseme.florian-assante.com"
+        description="A task manager created with React, Express and MongoDB"
+        image={organisemeImage}
+      />
+
+      <ItemContent
         name="The Weather App (01/2021)"
         imageAlt="weather-app"
         liveLink="https://weather.florian-assante.com"
@@ -20,15 +29,7 @@ const MyWebsites = () => {
       />
 
       <ItemContent
-        name="Simple Blog (12/2020)"
-        imageAlt="simple-blog"
-        liveLink="https://desolate-earth-07791.herokuapp.com/"
-        description="Simple blog made with EJS, Express and MongoDB from a Bootstrap template."
-        image={blogImage}
-      />
-
-      <ItemContent
-        name="CV (11/2020)"
+        name="CV (05/2021)"
         imageAlt="cv-florian-assante"
         liveLink="http://localhost:3000/"
         sourceLink="https://github.com/Raynnon/cv"

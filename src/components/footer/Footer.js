@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <Container
       id="footer"
-      className="text-center pb-1 bg-dark"
+      className="text-center pt-3 pb-1 bg-dark"
       as="footer"
       fluid
     >
@@ -22,7 +22,9 @@ const Footer = () => {
           <i className="fab fa-github"></i>
         </a>
       </div>
-      <p className="text-center">© 2020 - Florian Assante</p>
+      <p className="text-center" style={{ fontSize: "1rem" }}>
+        © 2020 - Florian Assante
+      </p>
     </Container>
   );
 };
