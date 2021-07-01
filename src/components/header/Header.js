@@ -44,7 +44,7 @@ const Header = () => {
                 onHide={() => setModalShow(false)}
               />
 
-              <Button
+              {/* <Button
                 className="cta-second"
                 href={CV}
                 download="CV - Florian Assante - English - 2021"
@@ -52,7 +52,7 @@ const Header = () => {
                 size="lg"
               >
                 Download CV
-              </Button>
+              </Button> */}
             </div>
           </div>
 
