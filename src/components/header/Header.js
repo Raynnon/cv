@@ -10,7 +10,7 @@ import Button from "react-bootstrap/Button";
 import florianImage from "./florian-assante-small.png";
 import computer from "./computer.png";
 
-import CV from "./CV-Florian-Assante-English-2021.pdf";
+/* import CV from "./CV-Florian-Assante-English-2021.pdf"; */
 
 const Header = () => {
   const [modalShow, setModalShow] = useState(false);

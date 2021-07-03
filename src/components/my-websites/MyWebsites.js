@@ -15,6 +15,8 @@ const MyWebsites = () => {
         name="Organise Me (04/2021)"
         imageAlt="organise-me"
         liveLink="https://organiseme.florian-assante.com"
+        sourceLinkFront="https://github.com/Raynnon/organiseme"
+        sourceLinkBack="https://github.com/Raynnon/tasks-api"
         description="A task manager created with React, Express and MongoDB"
         image={organisemeImage}
       />
@@ -23,6 +25,7 @@ const MyWebsites = () => {
         name="The Weather App (01/2021)"
         imageAlt="weather-app"
         liveLink="https://weather.florian-assante.com"
+        sourceLink="https://github.com/Raynnon/weather-app"
         description="A weather app created with EJS and Express using the Weatherbit API."
         image={weatherImage}
       />

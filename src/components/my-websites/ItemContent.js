@@ -6,6 +6,29 @@ import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 
 const ItemContent = (props) => {
+  const sourceCodeButton = (source) => {
+    let desc = "Source Code";
+
+    if (source === props.sourceLinkFront) {
+      desc = "Front Source Code";
+    } else if (source === props.sourceLinkBack) {
+      desc = "Back Source Code";
+    }
+
+    return (
+      <Button
+        className="cta-second mb-2"
+        variant="outline-primary"
+        href={source}
+        size="lg"
+        style={{ fontSize: "1rem" }}
+        target="_blank"
+      >
+        {desc}
+      </Button>
+    );
+  };
+
   return (
     <Row className="websites">
       <Col xs={12} xl={6}>
@@ -24,7 +47,7 @@ const ItemContent = (props) => {
         <Row className="justify-content-center">
           {props.liveLink ? (
             <Button
-              className="cta-button"
+              className="cta-button mb-2"
               variant="primary"
               href={props.liveLink}
               size="lg"
@@ -37,20 +60,9 @@ const ItemContent = (props) => {
             ""
           )}
 
-          {props.sourceLink ? (
-            <Button
-              className="cta-second"
-              variant="outline-primary"
-              href={props.sourceLink}
-              size="lg"
-              style={{ fontSize: "1rem" }}
-              target="_blank"
-            >
-              Source Code
-            </Button>
-          ) : (
-            ""
-          )}
+          {props.sourceLink ? sourceCodeButton(props.sourceLink) : ""}
+          {props.sourceLinkFront ? sourceCodeButton(props.sourceLinkFront) : ""}
+          {props.sourceLinkBack ? sourceCodeButton(props.sourceLinkBack) : ""}
         </Row>
       </Col>
     </Row>
