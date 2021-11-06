@@ -122,46 +122,24 @@ p {
 }
 
 /* Skills */
-.technologies .col,
-.technologies .col p {
-  text-align: center;
+.overlay-container:hover .overlay {
+  opacity: 1;
 }
 
-.animated img {
-  display: inline-block;
+.overlay-container:hover .overlay-img {
+  opacity: 0.3;
+}
+
+.overlay-img {
   transition: 0.5s ease;
   backface-visibility: hidden;
 }
 
-.animated:hover img {
-  opacity: 0.3;
-}
-
-.animated p {
-  color: #333;
-  font-size: 16px;
-  font-weight: bolder;
-  margin: 0;
-}
-
-.middle {
-  min-width: 50px;
-  padding: 5%;
-  transition: 0.5s ease;
+.overlay {
   opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
 }
 
-.middle:hover {
-  opacity: 1;
-}
-
-/* WWBSITES*/
+/* WEBSITES*/
 #my-websites .websites:nth-child(odd) {
   flex-direction: row-reverse;
 }

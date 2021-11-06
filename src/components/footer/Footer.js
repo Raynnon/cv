@@ -3,6 +3,8 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
 
+import arrowTop from "../../images/arrow-top.png";
+
 const Footer = () => {
   return (
     <Container
@@ -12,10 +14,10 @@ const Footer = () => {
       fluid
     >
       <a href="#header">
-        <Image src={require("../../images/arrow-top.png")} alt="Top Arrow" />
+        <Image src={arrowTop} alt="Top Arrow" />
       </a>
       <div id="social-networks" className="mt-3 mb-3">
-        <a href="https://www.linkedin.com/in/florianassante/" className="mr-3">
+        <a href="https://www.linkedin.com/in/florianassante/" className="me-3">
           <i className="fab fa-linkedin-in"></i>
         </a>
         <a href="https://github.com/Raynnon">
