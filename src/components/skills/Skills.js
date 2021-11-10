@@ -5,10 +5,10 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 
-import htmlLogo from "../../images/html5.png";
-import cssLogo from "../../images/css3.png";
+import reduxLogo from "../../images/redux.png";
+import nextLogo from "../../images/next.png";
 import sassLogo from "../../images/sass.png";
-import bootstrapLogo from "../../images/bootstrap.png";
+import TailwindLogo from "../../images/tailwind.svg";
 import reactLogo from "../../images/react.png";
 import nodejsLogo from "../../images/nodejs.png";
 import expressLogo from "../../images/express.png";
@@ -23,9 +23,15 @@ const Skills = () => {
     return (
       <Col className="overlay-container text-center position-relative">
         {showName ? (
-          <Image src={logo} alt="react" className="overlay-img" />
+          <Image
+            src={logo}
+            alt={name}
+            className="overlay-img"
+            width="64"
+            height="64"
+          />
         ) : (
-          <Image src={logo} alt="react" />
+          <Image src={logo} alt={name} width="64" height="64" />
         )}
         {showName ? (
           <div
@@ -41,10 +47,9 @@ const Skills = () => {
 
   const technoRow1 = [
     { name: "React", logo: reactLogo, showName: true },
-    { name: "HTML", logo: htmlLogo, showName: true },
-    { name: "CSS", logo: cssLogo, showName: true },
-    { name: "Bootstrap", logo: bootstrapLogo, showName: true },
-    { name: "Sass", logo: sassLogo, showName: false }
+    { name: "Redux", logo: reduxLogo, showName: true },
+    { name: "Next.js", logo: nextLogo, showName: false },
+    { name: "Tailwind", logo: TailwindLogo, showName: true }
   ];
 
   const technoRow2 = [
