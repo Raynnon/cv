@@ -15,7 +15,7 @@ const MyWebsites = () => {
       <ItemContent
         name="Mes cadeaux originaux (11/2021)"
         imageAlt="mes-cadeaux-originaux"
-        liveLink="https://mescadeauxoriginaux.fr"
+        liveLink="https://mescadeauxoriginaux.com"
         sourceLink="https://github.com/Raynnon/cadeaux-originaux"
         description="Affiliate site made with Next.js, Express.js and mongoDB"
         image={cadeauxOriginauxImage}
