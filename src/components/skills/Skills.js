@@ -11,12 +11,11 @@ import reactLogo from "../../images/react.png";
 import nodejsLogo from "../../images/nodejs.png";
 import expressLogo from "../../images/express.png";
 import mongodbLogo from "../../images/mongodb.png";
-import jestLogo from "../../images/jest.png";
+import linuxLogo from "../../images/linux.png";
 import gitLogo from "../../images/git.png";
 import photoshopLogo from "../../images/photoshop.png";
 import figmaLogo from "../../images/figma.png";
 import bootstrapLogo from "../../images/bootstrap.png";
-import reactTestingLogo from "../../images/react-testing-library.png";
 
 const Skills = () => {
   return (
@@ -47,9 +46,8 @@ const Skills = () => {
       </Row>
 
       <Row className="technologies">
+		<Logo name="Linux" logo={linuxLogo} showName />
         <Logo name="Git" logo={gitLogo} showName />
-        <Logo name="React testing library" logo={reactTestingLogo} showName />
-        <Logo name="Jest" logo={jestLogo} showName />
         <Logo name="Photoshop" logo={photoshopLogo} showName />
         <Logo name="Figma" logo={figmaLogo} showName />
       </Row>
