@@ -24,9 +24,6 @@ const Footer = () => {
           <i className="fab fa-github"></i>
         </a>
       </div>
-      <p className="text-center" style={{ fontSize: "1rem" }}>
-        © 2020 - Florian Assante
-      </p>
     </Container>
   );
 };

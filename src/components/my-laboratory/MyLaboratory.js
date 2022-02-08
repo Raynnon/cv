@@ -17,30 +17,30 @@ const MyLaboratory = () => {
       <h2>My laboratory</h2>
       <Row xl={5} lg={3} xs={2}>
         <Project
-          name="Simple Blog (12/2020)"
+          name="Simple Blog"
           technologies="EJS, Express, MongoDB"
           image={simbleBlogImage}
           link="https://desolate-earth-07791.herokuapp.com/"
         />
         <Project
-          name="Face detector (10/2020)"
+          name="Face detector"
           technologies="React & Express"
           image={faceDetectorImage}
         />
         <Project
-          name="Robofriends (08/2020)"
+          name="Robofriends"
           technologies="React"
           image={roboFriendsImage}
           link="https://sharp-davinci-00be4a.netlify.app/"
         />
         <Project
-          name="Tindog (08/2020)"
+          name="Tindog"
           technologies="HTML, CSS, Bootstrap"
           image={tinDogImage}
           link="https://tindog.florian-assante.com/"
         />
         <Project
-          name="CodePen Projects (2018/2019)"
+          name="CodePen Projects"
           technologies="Old projects made with Bootstrap"
           image={codePenImage}
           link="https://codepen.io/Raynnon"

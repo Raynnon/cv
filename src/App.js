@@ -3,7 +3,7 @@ import React from "react";
 import Header from "./components/header/Header";
 import Skills from "./components/skills/Skills";
 import MyWebsites from "./components/my-websites/MyWebsites";
-import MyLaboratory from "./components/my-laboratory/MyLaboratory";
+/* import MyLaboratory from "./components/my-laboratory/MyLaboratory"; */
 import Footer from "./components/footer/Footer";
 
 import Container from "react-bootstrap/Container";
@@ -17,7 +17,7 @@ export default function App() {
       <Header />
       <Skills />
       <MyWebsites />
-      <MyLaboratory />
+      {/* <MyLaboratory /> */}
       <Footer />
     </Container>
   );

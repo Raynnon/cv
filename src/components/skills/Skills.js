@@ -15,7 +15,6 @@ import linuxLogo from "../../images/linux.png";
 import gitLogo from "../../images/git.png";
 import photoshopLogo from "../../images/photoshop.png";
 import figmaLogo from "../../images/figma.png";
-import bootstrapLogo from "../../images/bootstrap.png";
 
 const Skills = () => {
   return (
@@ -36,7 +35,6 @@ const Skills = () => {
         <Logo name="Redux" logo={reduxLogo} showName />
         <Logo name="Next.js" logo={nextLogo} />
         <Logo name="Material UI" logo={materialUiLogo} showName />
-        <Logo name="Bootstrap" logo={bootstrapLogo} showName />
       </Row>
 
       <Row className="technologies justify-content-around mb-5" xs={3} md={5}>
@@ -46,7 +44,7 @@ const Skills = () => {
       </Row>
 
       <Row className="technologies">
-		<Logo name="Linux" logo={linuxLogo} showName />
+        <Logo name="Linux" logo={linuxLogo} showName />
         <Logo name="Git" logo={gitLogo} showName />
         <Logo name="Photoshop" logo={photoshopLogo} showName />
         <Logo name="Figma" logo={figmaLogo} showName />
