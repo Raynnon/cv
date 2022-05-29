@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 
-import ItemContent from "./ItemContent";
-import Container from "react-bootstrap/Container";
+import ItemContent from './ItemContent';
+import Container from 'react-bootstrap/Container';
 
-import backofficeImage from "./images/mes-cadeaux-originaux-backoffice.jpg";
-import organisemeImage from "./images/organise-me.jpg";
-import weatherImage from "./images/weather-app.jpg";
-import cadeauxOriginauxImage from "./images/mes-cadeaux-originaux.png";
+import backofficeImage from './images/mes-cadeaux-originaux-backoffice.jpg';
+import organisemeImage from './images/organise-me.jpg';
+import weatherImage from './images/weather-app.jpg';
+import cadeauxOriginauxImage from './images/mes-cadeaux-originaux.jpg';
 
 const MyWebsites = () => {
   return (
