@@ -1,20 +1,20 @@
-import React from "react";
-import Logo from "./Logo";
+import React from 'react';
+import Logo from './Logo';
 
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 
-import materialUiLogo from "../../images/material-ui.png";
-import reduxLogo from "../../images/redux.png";
-import nextLogo from "../../images/next.png";
-import reactLogo from "../../images/react.png";
-import nodejsLogo from "../../images/nodejs.png";
-import expressLogo from "../../images/express.png";
-import mongodbLogo from "../../images/mongodb.png";
-import linuxLogo from "../../images/linux.png";
-import gitLogo from "../../images/git.png";
-import photoshopLogo from "../../images/photoshop.png";
-import figmaLogo from "../../images/figma.png";
+import tailwindLogo from '../../images/tailwind.svg';
+import reduxLogo from '../../images/redux.png';
+import nextLogo from '../../images/next.png';
+import reactLogo from '../../images/react.png';
+import nodejsLogo from '../../images/nodejs.png';
+import expressLogo from '../../images/express.png';
+import mongodbLogo from '../../images/mongodb.png';
+import linuxLogo from '../../images/linux.png';
+import gitLogo from '../../images/git.png';
+import photoshopLogo from '../../images/photoshop.png';
+import figmaLogo from '../../images/figma.png';
 
 const Skills = () => {
   return (
@@ -23,7 +23,7 @@ const Skills = () => {
       className="bg-secondary pb-5"
       as="section"
       fluid
-      style={{ padding: "0 20%" }}
+      style={{ padding: '0 20%' }}
     >
       <h2>Skills</h2>
       <Row
@@ -34,7 +34,7 @@ const Skills = () => {
         <Logo name="React" logo={reactLogo} showName />
         <Logo name="Redux" logo={reduxLogo} showName />
         <Logo name="Next.js" logo={nextLogo} />
-        <Logo name="Material UI" logo={materialUiLogo} showName />
+        <Logo name="Tailwind" logo={tailwindLogo} showName />
       </Row>
 
       <Row className="technologies justify-content-around mb-5" xs={3} md={5}>
