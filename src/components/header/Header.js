@@ -16,32 +16,43 @@ const Header = () => {
       <Row style={{ height: '100%' }}>
         <Col xs={12} xl={8} style={{ paddingTop: '8%' }}>
           <div style={{ padding: '0 21%' }}>
-            <h1>
-              Hi. I am <b>Florian</b>.
-            </h1>
-            <p id="introduction" className="mt-3">
-              I am a <span className="font-weight-normal">web developer</span> &
-              webmarketer. I am currently open to new projects so feel free to
-              email me! :)
-            </p>
+            <h1>Hi! I am Florian!</h1>
+            <div>
+              <p className="mt-3">
+                Versatile professional with a passion for new technologies.
+                Comfortable both on the technical side and in customer support.
+              </p>
+              <p>Interested in the following roles:</p>
+              <p>
+                Web Developer · IT Support · Tech Customer Success · Technical
+                Sales
+              </p>
+              <p className="mt-3">
+                Feel free to contact me if you think we can collaborate! :)
+              </p>
+            </div>
           </div>
 
           <Image
             id="computer"
             className="mt-1 position-absolute"
             src={computer}
-            alt="computer"
+            alt=""
+            aria-hidden="true"
             style={{ height: '30%', bottom: 0 }}
             fluid
+            loading="eager"
           />
         </Col>
         <Col id="me" xl={4}>
           <Image
             id="myPicture"
             src={florianImage}
-            alt="florian-assante"
+            alt=""
+            aria-hidden="true"
             className="mt-5"
             fluid
+            loading="eager"
           />
         </Col>
       </Row>

@@ -1,6 +1,6 @@
-import React from "react";
-import Col from "react-bootstrap/Col";
-import Image from "react-bootstrap/Image";
+import React from 'react';
+import Col from 'react-bootstrap/Col';
+import Image from 'react-bootstrap/Image';
 
 const Logo = ({ name, logo, showName }) => {
   return (
@@ -12,9 +12,10 @@ const Logo = ({ name, logo, showName }) => {
           className="overlay-img"
           width="64"
           height="64"
+          loading="lazy"
         />
       ) : (
-        <Image src={logo} alt={name} width="64" height="64" />
+        <Image src={logo} alt={name} width="64" height="64" loading="lazy" />
       )}
       {showName ? (
         <div

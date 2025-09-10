@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "bootstrap": "^5.3.3",
+    "bootstrap": "^5.3.8",
     "react": "^18.3.1",
-    "react-bootstrap": "^2.10.2",
+    "react-bootstrap": "^2.10.10",
     "react-dom": "^18.3.1",
     "react-scripts": "^5.0.1"
   },
@@ -31,6 +31,6 @@
     ]
   },
   "devDependencies": {
-    "sass": "^1.77.3"
+    "sass": "^1.92.1"
   }
 }
