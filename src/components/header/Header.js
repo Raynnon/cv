@@ -14,8 +14,8 @@ const Header = () => {
   return (
     <Container id="header" as="header" fluid>
       <Row style={{ height: '100%' }}>
-        <Col xs={12} xl={8} style={{ paddingTop: '8%' }}>
-          <div style={{ padding: '0 21%' }}>
+        <Col xs={12} xl={8} style={{ paddingTop: '8%', position: 'relative' }}>
+          <div style={{ padding: '0 21%', paddingBottom: '30vh' }}>
             <h1>Hi! I am Florian!</h1>
             <div>
               <p className="mt-3">
@@ -35,11 +35,9 @@ const Header = () => {
 
           <Image
             id="computer"
-            className="mt-1 position-absolute"
             src={computer}
             alt=""
             aria-hidden="true"
-            style={{ height: '30%', bottom: 0 }}
             fluid
             loading="eager"
           />

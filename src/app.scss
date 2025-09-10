@@ -75,7 +75,7 @@ p {
 }
 
 #header {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #me {
@@ -88,6 +88,13 @@ p {
 
 #myPicture {
   display: none;
+}
+
+#computer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 30vh;
 }
 
 @media (max-width: 1199px) {
