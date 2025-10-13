@@ -1,72 +1,109 @@
 import React from "react";
-
+import PropTypes from "prop-types";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
+import { BUTTON_LABELS } from "../../constants";
 
-const ItemContent = (props) => {
-  const sourceCodeButton = (source) => {
-    let desc = "Source Code";
+/**
+ * ItemContent Component - Displays a portfolio project
+ * Each project has an image, title, description, and links
+ */
+const ItemContent = ({
+  name,
+  image,
+  imageAlt,
+  description,
+  liveLink,
+  sourceLink,
+  sourceLinkFront,
+  sourceLinkBack
+}) => {
+  /**
+   * Creates a source code button
+   * Adapts the label based on link type (front/back/general)
+   */
+  const renderSourceButton = (url, type) => {
+    let label = BUTTON_LABELS.SOURCE_CODE;
 
-    if (source === props.sourceLinkFront) {
-      desc = "Front Source Code";
-    } else if (source === props.sourceLinkBack) {
-      desc = "Back Source Code";
+    if (type === 'front') {
+      label = BUTTON_LABELS.FRONT_SOURCE_CODE;
+    } else if (type === 'back') {
+      label = BUTTON_LABELS.BACK_SOURCE_CODE;
     }
 
     return (
       <Button
         className="cta-second mb-2"
         variant="outline-primary"
-        href={source}
+        href={url}
         size="lg"
-        style={{ fontSize: "1rem" }}
         target="_blank"
       >
-        {desc}
+        {label}
       </Button>
     );
   };
 
   return (
     <Row className="websites">
+      {/* Project image */}
       <Col xs={12} xl={6}>
         <Image
           className="website-image"
-          src={props.image}
-          alt={props.imageAlt}
+          src={image}
+          alt={imageAlt}
           fluid
         />
       </Col>
+
+      {/* Project information and links */}
       <Col xs={12} xl={6} className="d-flex flex-column justify-content-center">
-        <h3>{props.name}</h3>
-        <p className="description" style={{ fontSize: "1rem" }}>
-          {props.description}
-        </p>
+        <h3>{name}</h3>
+        <p className="description website-description">{description}</p>
+
+        {/* Action buttons */}
         <Row className="justify-content-center">
-          {props.liveLink ? (
+          {/* "See Live" button */}
+          {liveLink && (
             <Button
               className="cta-button mb-2"
               variant="primary"
-              href={props.liveLink}
+              href={liveLink}
               size="lg"
-              style={{ fontSize: "1rem" }}
               target="_blank"
             >
-              See Live
+              {BUTTON_LABELS.SEE_LIVE}
             </Button>
-          ) : (
-            ""
           )}
 
-          {props.sourceLink ? sourceCodeButton(props.sourceLink) : ""}
-          {props.sourceLinkFront ? sourceCodeButton(props.sourceLinkFront) : ""}
-          {props.sourceLinkBack ? sourceCodeButton(props.sourceLinkBack) : ""}
+          {/* Source code buttons */}
+          {sourceLink && renderSourceButton(sourceLink, 'general')}
+          {sourceLinkFront && renderSourceButton(sourceLinkFront, 'front')}
+          {sourceLinkBack && renderSourceButton(sourceLinkBack, 'back')}
         </Row>
       </Col>
     </Row>
   );
+};
+
+ItemContent.propTypes = {
+  name: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  imageAlt: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  liveLink: PropTypes.string,
+  sourceLink: PropTypes.string,
+  sourceLinkFront: PropTypes.string,
+  sourceLinkBack: PropTypes.string,
+};
+
+ItemContent.defaultProps = {
+  liveLink: null,
+  sourceLink: null,
+  sourceLinkFront: null,
+  sourceLinkBack: null,
 };
 
 export default ItemContent;

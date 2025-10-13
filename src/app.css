@@ -1,14 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @font-face {
   font-family: "product_sansregular";
-  src:
-    url("./fonts/product_sans_regular-webfont.woff2") format("woff2"),
-    url("./fonts/product_sans_regular-webfont.woff") format("woff");
+  src: url("./fonts/product_sans_regular-webfont.woff2") format("woff2"), url("./fonts/product_sans_regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
 html {
   scroll-behavior: smooth;
 }
@@ -32,6 +28,7 @@ h2 {
   font-weight: bold;
   font-size: 3rem;
 }
+
 h1 {
   font-size: 3.9rem;
 }
@@ -56,15 +53,10 @@ p {
 
 .btn-lg {
   width: 180px;
-  font-size: 1rem;
 }
 
 .cta-second {
   margin-left: 3rem;
-}
-
-.website-description {
-  font-size: 1rem;
 }
 
 @media (max-width: 721px) {
@@ -73,12 +65,10 @@ p {
     margin-right: auto;
     margin-bottom: 5%;
   }
-
   .cta-second {
     margin-left: 0;
   }
 }
-
 #header {
   height: 100vh;
 }
@@ -95,56 +85,30 @@ p {
   display: none;
 }
 
-.header-row {
-  height: 100%;
-}
-
-.header-col-main {
-  padding-top: 8%;
-}
-
-.header-content {
-  padding: 0 21%;
-}
-
-.computer-image {
-  height: 30%;
-  bottom: 0;
-}
-
 @media (max-width: 1199px) {
   #header {
     height: auto;
     text-align: center;
     padding-bottom: 48px;
   }
-
   #computer {
     display: none;
   }
-
   #me {
     background: none;
   }
-
   #myPicture {
     display: inline-block;
     max-height: 300px;
     height: 40vh;
   }
 }
-
 @media (max-width: 954px) {
   #introduction {
     text-align: justify;
   }
 }
-
 /* Skills */
-.skills-container {
-  padding: 0 20%;
-}
-
 .overlay-container:hover .overlay {
   opacity: 1;
 }
@@ -160,13 +124,6 @@ p {
 
 .overlay {
   opacity: 0;
-}
-
-.logo-overlay-text {
-  top: 7px;
-  left: 0;
-  right: 0;
-  bottom: 0;
 }
 
 /* WEBSITES*/
@@ -188,7 +145,6 @@ p {
     margin-bottom: 30px;
   }
 }
-
 /* PROJECTS */
 #projects .col,
 #projects .col p {
@@ -203,4 +159,4 @@ footer i {
 
 #social-networks a {
   font-size: 1.5rem;
-}
+}/*# sourceMappingURL=app.css.map */

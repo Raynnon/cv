@@ -1,35 +1,39 @@
 import React from 'react';
-import Logo from './Logo';
-
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
-import reactLogo from '../../images/react.png';
-import nodejsLogo from '../../images/nodejs.png';
-import gitLogo from '../../images/git.png';
-import photoshopLogo from '../../images/photoshop.png';
-import figmaLogo from '../../images/figma.png';
+import Logo from './Logo';
+import { skills } from '../../data/skills';
+import { PAGE_TITLES, SECTIONS } from '../../constants';
 
+/**
+ * Technical Skills Section
+ * Displays the list of skill logos
+ */
 const Skills = () => {
   return (
     <Container
-      id="skills"
-      className="bg-secondary pb-5"
+      id={SECTIONS.SKILLS}
+      className="bg-secondary pb-5 skills-container"
       as="section"
       fluid
-      style={{ padding: '0 20%' }}
     >
-      <h2>Technical Skills</h2>
+      <h2>{PAGE_TITLES.TECHNICAL_SKILLS}</h2>
+
       <Row
         className="technologies justify-content-center justify-content-md-around mb-5"
         xs={3}
         md={5}
       >
-        <Logo name="React" logo={reactLogo} showName />
-        <Logo name="Node.js" logo={nodejsLogo} />
-        <Logo name="Git" logo={gitLogo} showName />
-        <Logo name="Photoshop" logo={photoshopLogo} showName />
-        <Logo name="Figma" logo={figmaLogo} showName />
+        {/* Display each skill */}
+        {skills.map((skill) => (
+          <Logo
+            key={skill.name}
+            name={skill.name}
+            logo={skill.logo}
+            showName={skill.showName}
+          />
+        ))}
       </Row>
     </Container>
   );
