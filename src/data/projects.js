@@ -28,7 +28,7 @@ export const projects = [
   {
     name: 'Mes cadeaux originaux',
     imageAlt: 'mes-cadeaux-originaux',
-    liveLink: 'https://mescadeauxoriginaux.com',
+    liveLink: 'https://cadeaux-originaux-frontoffice.vercel.app/',
     sourceLink: 'https://github.com/Raynnon/cadeaux-originaux',
     description: 'Affiliate site made with Next.js, Express.js and mongoDB',
     image: cadeauxOriginauxImage,
